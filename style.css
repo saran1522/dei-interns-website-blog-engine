@@ -112,6 +112,8 @@ nav .icon {
     background-color: #025786;
 }
 
+
+/* this is for responsive nav */
 @media only screen and (max-width:1000px) {
     .navbar {
         justify-content: space-between;
