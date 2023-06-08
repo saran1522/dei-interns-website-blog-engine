@@ -87,6 +87,10 @@ nav .icon {
     display: none;
 }
 
+.hidnav{
+    display: none;
+}
+
 .login {
     display: flex;
     justify-content: space-around;
@@ -95,15 +99,13 @@ nav .icon {
     width: 25%;
 }
 
-.login button {
-    height: 80%;
-    width: 40%;
-    border: none;
-    outline: none;
+.login a{
+    padding: 10px;
+    text-decoration: none;
     color: white;
     background-color: #1d3557;
     border-radius: 3px;
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
 }
@@ -139,7 +141,7 @@ nav .icon {
     .navbar {
         display: flex;
         width: 100vw;
-        height: 70vh;
+        height: 100vh;
         background-color: #1d3557;
         position: fixed;
         top:0px;
@@ -171,16 +173,11 @@ nav .icon {
     }
 
     .login {
-        position: absolute;
-        width: 30%;
-        right: 20px;
-        top: 20px;
+        display: none;
     }
 
-    .login button {
-        height: 20px;
-        width: 50px;
-        font-size: 0.6rem;
+    .hidnav{
+        display: block;
     }
 }
 
@@ -289,7 +286,7 @@ nav .icon {
     }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
 
     .home {
         height: 600px;
@@ -308,8 +305,8 @@ nav .icon {
     }
 
     .home-img {
-        height: 90%;
-        width: 90%;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -349,13 +346,21 @@ nav .icon {
     border-radius: 50%;
 }
 
-.dash-box {
-    height: 200px;
+.dash-box-container{
+    height: 180px;
     width: 200px;
-    padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 30px rgba(178, 178, 178, 0.694);
 }
+
+.dash-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
 
 .dash-box p {
     cursor: pointer;
@@ -365,18 +370,20 @@ nav .icon {
 @media only screen and (max-width:1000px) {
 
     .dashboard {
+        height: 1000px;
         align-items: center;
+        justify-content: space-evenly;
+        border: 1px solid red;
     }
 
     .dash-container {
         height: auto;
         flex-wrap: wrap;
-        flex-grow: 2;
         width: 80vw;
         align-items: center;
     }
 
-    .dash-box {
+    .dash-box-container {
         width: 300px;
         margin: 10px 0px 10px 0px;
     }
