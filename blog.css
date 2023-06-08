@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6f8fa;
+    font-family: sans-serif;
+}
+
+nav {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+nav .icon {
+    position: absolute;
+    right: 5px;
+    /* top:0px; */
+    display: none;
+}
+
+.logo {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 80%;
+}
+
+.navbar {
+    list-style: none;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    color: #025786;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    color: #1d3557;
+}
+
+.navbar li a {
+    text-decoration: none;
+    position: relative;
+    color: #025786;
+    font-size: 1.05rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar li a:hover {
+    color: #1d3557;
+}
+
+.navbar li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #1d3557;
+    transition: 0.3s;
+}
+
+.navbar li a:hover:after {
+    width: 100%;
+}
+
+nav .icon {
+    position: absolute;
+    right: 5px;
+    /* top:0px; */
+    /* display: none; */
+}
+
+.login button:hover {
+    background-color: #025786;
+}
+
+@media only screen and (max-width:1030px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar li a {
+        font-size: 0.9rem;
+    }
+
+    .logo img {
+        height: 60%;
+        margin-left: 20px;
+    }
+
+    .login button {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+
+    .navbar {
+        display: flex;
+        width: 100vw;
+        height: 70vh;
+        background-color: #1d3557;
+        position: fixed;
+        top:0px;
+        left: -110%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 10;
+        transition: .5s ease;
+    }
+
+    nav .icon {
+        display: block;
+        z-index: 10;
+    }
+
+    .navbar.responsive {
+        left: 0%;
+        top:0px;
+        transition: .5s ease;
+    }
+
+    .navbar.responsive li{
+        background: transparent;
+    }
+
+    .navbar.responsive li a {
+        background: transparent;
+        color: white;
+    }
+
+    .resicon{
+        background: transparent;
+        color: #ffffff;
+    }
+
+    .resicon i{
+        background: transparent;
+    }
+}
+
+
+.blog-img {
+    display: block;
+    margin: 30px auto;
+    height: 80vh;
+    width: 70%;
+    border-radius: 5px;
+    background-color: rgb(234, 234, 235);
+    position: relative;
+}
+
+
+.upload-btn {
+    background: transparent;
+    height: 25px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: rgb(135, 135, 135);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media only screen and (max-width:1000px) {
+    .blog-img {
+        width: 90%;
+        height: 35vh;
+    }
+}
+
+.upload-btn:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.blog {
+    background: white;
+}
+
+.heading-input {
+    width: 100%;
+    resize: none;
+    appearance: none;
+    overflow: hidden;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #14213d;
+    border: none;
+    outline: none;
+    background: white;
+}
+
+.heading-input::placeholder {
+    color: rgb(178, 191, 203);
+}
+
+
+.blog-content {
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
+
+.blog-content textarea {
+    display: block;
+    height: 95%;
+    width: 95%;
+    margin: auto auto;
+    background: white;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    color: #14213d;
+    border: none;
+    outline: none;
+    line-height: 2.3rem;
+    resize: none;
+}
+
+.blog-content textarea::placeholder {
+    color: rgb(178, 191, 203);
+    font-size: 1.8rem;
+}
+
+.blog-buttons {
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.button-container {
+    background: white;
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog-btn {
+    height: 50px;
+    width: 110px;
+    background-color: rgb(155, 250, 218);
+    background-color: #025786;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width:500px) {
+
+    .button-container {
+        width: 60vw;
+    }
+
+    .blog-content {
+        height: 70vh;
+    }
+
+    .blog-btn {
+        height: 30px;
+        width: 170px;
+        border-radius: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+.more-blogs-container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.mb-heading {
+    width: 100%;
+    color: #1d3557;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 40px 0px;
+    font-size: 2.5rem;
+}
+
+.more-blogs {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.more-blog-box {
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 20px rgba(42, 41, 41, 0.122);
+}
+
+.more-blog-box img {
+    height: 42%;
+    width: 95%;
+    margin-top: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.more-blog-box img:hover {
+    transform: translateY(0, 8px);
+}
+
+.more-blog-box p {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 10px;
+    width: 90%;
+    background: transparent;
+    line-height: 1.5rem;
+    color: #1d3557;
+}
+
+.mb-btn {
+    height: 40px;
+    width: 120px;
+    background-color: rgb(155, 250, 218);
+    background-color: #1d3557;
+    background-color: #025786;
+    ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.mb-btn a {
+    text-decoration: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.box-last {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: aquamarine;
+    background-color: #025786;
+    ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width:1000px) {
+
+    .mb-heading {
+        font-size: 1.7rem;
+    }
+
+    .more-blogs-container {
+        justify-content: space-between;
+    }
+
+    .more-blogs {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .more-blog-box {
+        margin: 10px 0px 10px 0px;
+        display: flex;
+        height: 450px;
+        width: 310px;
+    }
+
+    .mb-btn {
+        height: 40px;
+        width: 120px;
+        background-color: rgb(155, 250, 218);
+        background-color: #025786;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 0.7rem;
+        cursor: pointer;
+        margin: 5px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+footer {
+    height: 10vh;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(210, 226, 230);
+    margin-top: 40px;
+    background-color: #f6f8fa;
+}
+
+footer {
+    height: 4vh;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog engine</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://storage.googleapis.com/ezap-prod/colleges/40/dayalbagh-educational-institute-distance-education-logo.png"
+                    alt="">
+            </div>
+            <ul class="navbar" id="navbar">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Blog-Home</a> </li>
+                <li> <a href="#">Registration</a> </li>
+                <li> <a href="#moreBlogs">Blogs</a> </li>
+            </ul>
+            <div class="icon menu-btn" id="iconBtn" onclick="myFunc()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="blog-img">
+
+        <button class="upload-btn" onclick="document.getElementById('getFile').click()"><input type='file'
+                id="getFile">upload image</button>
+    </div>
+
+
+    <section class="blog">
+        <div class="blog-heading">
+            <textarea maxlength="150" placeholder="Article Title" id="title-input" class="heading-input"></textarea>
+        </div>
+        <div class="blog-content">
+            <textarea name="" id="" placeholder="start writing..."></textarea>
+        </div>
+    </section>
+
+
+    <section class="blog-buttons">
+        <div class="button-container">
+            <button class="blog-btn">
+                Preview
+            </button>
+            <button class="blog-btn">
+                Publish
+            </button>
+            <button class="blog-btn">
+                Delete
+            </button>
+        </div>
+    </section>
+    <section class="more-blogs-container" id="moreBlogs">
+        <h2 class="mb-heading">Read More Blogs Here</h2>
+        <div class="more-blogs">
+            <div class="more-blog-box">
+                <img src="https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita quia laudantium necessitatibus
+                    eaque ipsum ratione inventore asperiores qui error distinctio, vel molestias quo reprehenderit amet,
+                    eius rerum voluptas velit?</p>
+                <button class="mb-btn"><a href="">Read More</a></button>
+                <span class="box-last last-one"></span>
+            </div>
+            <div class="more-blog-box">
+                <img src="https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita quia laudantium necessitatibus
+                    eaque ipsum ratione inventore asperiores qui error distinctio, vel molestias quo reprehenderit amet,
+                    eius rerum voluptas velit?</p>
+                <button class="mb-btn"><a href="">Read More</a></button>
+                <span class="box-last last-two"></span>
+            </div>
+            <div class="more-blog-box">
+                <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita quia laudantium necessitatibus
+                    eaque ipsum ratione inventore asperiores qui error distinctio, vel molestias quo reprehenderit amet,
+                    eius rerum voluptas velit?</p>
+                <button class="mb-btn"><a href="">Read More</a></button>
+                <span class="box-last last-three"></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © DEI Interns 2023
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
