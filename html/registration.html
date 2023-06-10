@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register a student</title>
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+
+<body>
+    <section class="form-section wid-hun" id="form-section">
+        <!-- <div class="form-left wid-hun"> -->
+            <div class="form-container">
+                <h2>Register A Student</h2>
+                <form action="noaction.php">
+                    <fieldset>
+                        <label for="fname">Enter Name</label>
+                        <input type="text" name="fname" class="inp" required>
+                        <label for="fname">Enter Email</label>
+                        <input type="email" class="inp" required>
+                        <label for="fname">Enter Ph. Number</label>
+                        <input type="number" minLength="10" class="inp" required>
+                        <label>Enter Branch</label>
+                        <input type="text" min="13" max="120" class="inp">
+                        <label for="fname">Enter Address<input type="text" name="fname" class="inp" required></label>
+                        <label for="fname">Enter Domain</label>
+                        <input type="text" name="fname" class="inp" required>
+                        Select Gender:
+                        <label><input type="radio" name="Gender" required> male</label>
+                        <label><input type="radio" name="Gender" required> female</label>
+                        <br>
+                        <br>
+                        <div class="inp date">
+                            <label>Select Start Date: <input type="date"></label>
+                            </label>
+                            <label>Select End Date: <input type="date"></label>
+                        </div>
+                        </label>
+                        <button class="submit-btn">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        <!-- </div> -->
+    </section>
+</body>
+
+</html>
